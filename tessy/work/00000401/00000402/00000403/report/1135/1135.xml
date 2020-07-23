@@ -1,0 +1,265 @@
+<report xml_version="3" tessy_version="4.2.8" testobject_name="vehdist" testobject_uuid="58626b56-236c-4789-892f-ff753387b0d5" success="ok">
+	<summary>
+		<info project_name="req_mngt_ultrasonic" module_name="New Module" module_uuid="17cc92df-69d0-48d0-982a-56134c161ab1" testobject_name="vehdist" testobject_uuid="58626b56-236c-4789-892f-ff753387b0d5" testobject_last_modified="2020-03-13 13:06:05+0530" cte_file="false" has_faultinjections="false" date="2020-07-21" time="09:51:12+0530" user="Sowjanya" host="Sowjanya"/>
+		<comments>
+		</comments>
+		<statistic total="12" ok="12" ok_list="1.1;2.1;3.1;4.1;5.1;6.1;7.1;8.1;9.1;10.1;11.1;12.1" notok="0" notok_list="" notexecuted="0" notexecuted_list=""/>
+		<metrics>
+			<cc_total value="5" result="ok"/>
+			<result_significance value="true" result="ok"/>
+			<tc_cc_ratio value="2.40" result="ok"/>
+		</metrics>
+		
+		<interface>
+		<mod id="14689edb-8c2b-452c-b22c-d0edad99584c" lid="8" opt="7" ver="21">
+		<funcs>
+		<func decl="status vehdist()" id="2" mod="1" nam="vehdist" scp="2" src="1" tmd="0x2000000000000000">
+		<coverage c0="10" c1="6" c2="6" mcc="8" mcdc="7"/>
+		<metrics calls="0" depth="1" mccabe="5" stmts="11"/>
+		</func>
+		</funcs>
+		<types>
+		<enum id="1" nam="TESSYTAG_status" src="1" tmd="0x20000000000" ttg="1">
+		<comp id="1" nam="obst_near" val="0" vdf="2"/>
+		<comp id="2" nam="obst_far" val="1" vdf="2"/>
+		<comp id="3" nam="inv_dist" val="2" vdf="2"/>
+		<comp id="4" nam="inv_time" val="3" vdf="2"/>
+		</enum>
+		<typedef id="2" nam="status" src="1" trf="1"/>
+		</types>
+		<vars>
+		<var dv="1" id="7" nam="timedur" scp="8" src="1" tc="11"/>
+		<var id="6" nam="distance" scp="2" src="1" tc="11"/>
+		</vars>
+		</mod>
+		<funcs>
+		<func id="2" nam="vehdist">
+		<ret id="5" ips="4" pas="4" tc="15" trf="2"/>
+		<vars>
+		<var df="NONE" id="6" ips="8" pas="4" scp="2"/>
+		<var df="NONE" id="7" ips="2" pas="2" scp="8"/>
+		</vars>
+		</func>
+		</funcs>
+		</interface>
+		<properties directory="C:\Users\Sowjanya\Projects\TESSY\req_mngt_ultrasonic_modified\tessy\work\00000401\00000402\00000403" config="$(PROJECTROOT)\tessy\config\configuration.xml" project_root="C:\Users\Sowjanya\Projects\TESSY\req_mngt_ultrasonic_modified" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(USERPROFILE)\Desktop\ultrasonic.c" sha1="2a0771aed5f6593c0c4236170609f8f12be18206"/>
+		</properties>
+		<attributes>
+		</attributes>
+		<requirements>
+			<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:1-1.0]" id="1" version="1" minor_version="0" short="The distance should be in the range of 2 to 80cm, else return inv_dist" text="" order_no="1"/>
+			<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:2-1.0]" id="2" version="1" minor_version="0" short="The timedur should be always greater than 0, else return inv_time" text="" order_no="2"/>
+			<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:3-2.0]" id="3" version="2" minor_version="0" short="The distance is greater than 40, obst_far is returned" text="" order_no="3"/>
+			<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:4-1.0]" id="4" version="1" minor_version="0" short="The distance is less than 30, obst_near is returned" text="" order_no="4"/>
+		</requirements>
+	</summary>
+	<module>
+	</module>
+	<testobject success="ok">
+		<testcase id="1" uuid="ecb7d54e-8483-47fa-8593-f71e67ccaf39" dbid="1137" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:1-1.0]" id="1" version="1" minor_version="0" short="The distance should be in the range of 2 to 80cm, else return inv_dist" text="" order_no="1"/>
+			</requirements>
+			<teststep id="1.1" uuid="5693f04d-fd07-43c1-ae7d-5dea807febb3" dbid="1138" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="8" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="137.6" actual_value="137.6" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="inv_dist" actual_value="inv_dist" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="2" uuid="c4574655-c3ce-4eb6-ac21-9c28e73aec13" dbid="1139" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:1-1.0]" id="1" version="1" minor_version="0" short="The distance should be in the range of 2 to 80cm, else return inv_dist" text="" order_no="1"/>
+			</requirements>
+			<teststep id="2.1" uuid="23a12cb1-109e-47f5-9c96-abc4127a156c" dbid="1140" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="9" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="154.8" actual_value="154.8" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="inv_dist" actual_value="inv_dist" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="3" uuid="af0af5f5-19a1-40fb-b172-49c72dd724f7" dbid="1141" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:1-1.0]" id="1" version="1" minor_version="0" short="The distance should be in the range of 2 to 80cm, else return inv_dist" text="" order_no="1"/>
+			</requirements>
+			<teststep id="3.1" uuid="ef0c146a-fb46-4c51-8f4f-c78ea4f88e3e" dbid="1142" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="7" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="120.4" actual_value="120.4" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="inv_dist" actual_value="inv_dist" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="4" uuid="6542fb92-d700-4b60-86cb-ab0dfddf3386" dbid="1143" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:2-1.0]" id="2" version="1" minor_version="0" short="The timedur should be always greater than 0, else return inv_time" text="" order_no="2"/>
+			</requirements>
+			<teststep id="4.1" uuid="2f0ccaf3-6fc3-44bd-9344-eec99ebfedf0" dbid="1144" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="-2" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="120.4" actual_value="120.4" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="inv_time" actual_value="inv_time" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="5" uuid="19e818cd-5e3a-4ee2-844d-189d97d7b6fd" dbid="1145" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:2-1.0]" id="2" version="1" minor_version="0" short="The timedur should be always greater than 0, else return inv_time" text="" order_no="2"/>
+			</requirements>
+			<teststep id="5.1" uuid="a16f79ee-cafa-49ab-86fa-09f38be114bb" dbid="1146" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="-1" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="120.4" actual_value="120.4" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="inv_time" actual_value="inv_time" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="6" uuid="9e03dbba-24ee-4f85-ad41-e3ebb9c6f9c1" dbid="1147" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:2-1.0]" id="2" version="1" minor_version="0" short="The timedur should be always greater than 0, else return inv_time" text="" order_no="2"/>
+			</requirements>
+			<teststep id="6.1" uuid="034c8e3f-15e6-4853-9293-fe2f998c2eb6" dbid="1148" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="0" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="120.4" actual_value="120.4" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="inv_time" actual_value="inv_time" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="7" uuid="c0eea2d5-074b-4437-af04-ccaea5375511" dbid="1149" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:3-2.0]" id="3" version="2" minor_version="0" short="The distance is greater than 40, obst_far is returned" text="" order_no="3"/>
+			</requirements>
+			<teststep id="7.1" uuid="cf40a794-bdf3-4cfd-b9a6-460ff574f5ed" dbid="1150" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="2" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="34.4" actual_value="34.4" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="obst_far" actual_value="obst_far" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="8" uuid="ff9b798d-743d-4cc5-bdcc-965a21672387" dbid="1151" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:3-2.0]" id="3" version="2" minor_version="0" short="The distance is greater than 40, obst_far is returned" text="" order_no="3"/>
+			</requirements>
+			<teststep id="8.1" uuid="10d66880-e6a3-4281-8b28-b59c6b248c98" dbid="1152" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="3" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="51.6" actual_value="51.6" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="obst_far" actual_value="obst_far" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="9" uuid="14602935-689b-445d-851c-2c54e7e54607" dbid="1153" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:3-2.0]" id="3" version="2" minor_version="0" short="The distance is greater than 40, obst_far is returned" text="" order_no="3"/>
+			</requirements>
+			<teststep id="9.1" uuid="3d01f769-1462-48ff-a0f4-bb67637d2970" dbid="1154" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="4" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="68.8" actual_value="68.8" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="obst_far" actual_value="obst_far" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="10" uuid="175e3bc6-1f1e-4b39-859b-d2a5bddd7344" dbid="1155" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:4-1.0]" id="4" version="1" minor_version="0" short="The distance is less than 30, obst_near is returned" text="" order_no="4"/>
+			</requirements>
+			<teststep id="10.1" uuid="d611893e-b47b-4534-a888-ac542fdd061e" dbid="1156" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="0.12" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="2.064" actual_value="2.064" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="obst_near" actual_value="obst_near" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="11" uuid="6aead056-86d4-4942-a8de-e0cd8eec64e3" dbid="1157" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:4-1.0]" id="4" version="1" minor_version="0" short="The distance is less than 30, obst_near is returned" text="" order_no="4"/>
+			</requirements>
+			<teststep id="11.1" uuid="140ec76a-5584-43a0-a69f-88279d4e5463" dbid="1158" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="0.18" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="3.096" actual_value="3.096" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="obst_near" actual_value="obst_near" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+		<testcase id="12" uuid="07cfaace-5dfe-4972-85b6-717394b59d2f" dbid="1159" success="ok" testdata_success="ok" is_faultinjection_testcase="false">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" content_type="PLAIN" identifier="[ND:4-1.0]" id="4" version="1" minor_version="0" short="The distance is less than 30, obst_near is returned" text="" order_no="4"/>
+			</requirements>
+			<teststep id="12.1" uuid="451cac82-9c6e-4a63-a532-7c429bf3ecbd" dbid="1160" success="ok" testdata_success="ok" repeat_count="1">
+				<inputs>
+					<input name="timedur" type="float" type_modifier="" unit="" id="7" value="0.23" use="1"/>
+				</inputs>
+				<results>
+					<result name="distance" type="float" type_modifier="" unit="" id="6" expected_value="3.956" actual_value="3.956" success="ok" use="1"/>
+					<result name="vehdist()" type="status" type_modifier="" unit="" id="5" expected_value="obst_near" actual_value="obst_near" success="ok" use="1"/>
+				</results>
+				<metrics>
+					<result_significance value="true" result="ok"/>
+				</metrics>
+			</teststep>
+		</testcase>
+	</testobject>
+</report>

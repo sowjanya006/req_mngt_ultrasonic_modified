@@ -1,0 +1,17 @@
+Src_include_ultrasonic := C:/Users/Sowjanya/Desktop 
+Src_cppflags_ultrasonic := 
+#Src_cppflags_tgt_ultrasonic :=
+#Src_cflags_tgt_ultrasonic :=
+BUFFER_SIZE := 10240
+COMM_BUFFER_INTEGRITY := false
+COMM_CHECKSUM := false
+COMM_FILE_COMPRESSION := false
+COMPILER_INCLUDES := C:/Users/Sowjanya/Projects/TESSY/REQ_MN~2/tessy
+COMPILER_INSTALL_PATH := C:/PROGRA~1/Razorcat/Shared/1.3/msys32
+ENABLE_EXCEPTIONS := true
+ENDIANESS := -
+EXEFILE_EXTENSION := .exe
+OBJFILE_EXTENSION := .o
+TARGET_INSTALL_PATH := C:/Users/Sowjanya/Projects/TESSY/REQ_MN~2/tessy
+TIMER_ENABLED := false
+TIMER_FILE := C:/PROGRA~1/Razorcat/TESSY_4.2/sys/src/comm/TS_TIM~2.C

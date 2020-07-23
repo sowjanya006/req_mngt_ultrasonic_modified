@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    backup="$(PROJECTROOT)\tessy\backup"
+    configuration=""
+    database="$(PROJECTROOT)\tessy"
+    defaultEnvironment=""
+    description=""
+    enableSourceRoot="false"
+    identifier="490ee12f-3a98-45bb-b81f-c25b2cd9cf27"
+    location="$(PROJECTROOT)\tessy"
+    name="req_mngt_ultrasonic"
+    projectVersion="5"
+    tessyVersion="4.2.6"
+    isTemplate="false"
+    isSample="false"/>

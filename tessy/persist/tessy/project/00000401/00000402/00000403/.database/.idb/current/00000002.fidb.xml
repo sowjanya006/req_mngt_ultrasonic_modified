@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<func id="2" nam="vehdist">
+<ret id="5" ips="4" pas="4" tc="15" trf="2"/>
+<vars>
+<var df="NONE" id="6" ips="8" pas="4" scp="2"/>
+<var df="NONE" id="7" ips="2" pas="2" scp="8"/>
+</vars>
+</func>

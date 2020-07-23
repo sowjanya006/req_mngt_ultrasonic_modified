@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mod id="14689edb-8c2b-452c-b22c-d0edad99584c" lid="8" md5="edf98a1140bb1099627af643fdfd76fe" opt="7" ver="21">
+<funcs>
+<func decl="status vehdist()" id="2" md5="23cc3cba050832c70f26c282d06523cb" mod="1" nam="vehdist" scp="2" src="1" srcid="1" tmd="0x2000000000000000">
+<coverage c0="10" c1="6" c2="6" mcc="8" mcdc="7"/>
+<metrics calls="0" depth="1" mccabe="5" stmts="11"/>
+</func>
+</funcs>
+<types>
+<enum id="1" nam="TESSYTAG_status" src="1" tmd="0x20000000000" ttg="1">
+<comp id="1" nam="obst_near" val="0" vdf="2"/>
+<comp id="2" nam="obst_far" val="1" vdf="2"/>
+<comp id="3" nam="inv_dist" val="2" vdf="2"/>
+<comp id="4" nam="inv_time" val="3" vdf="2"/>
+</enum>
+<typedef id="2" nam="status" src="1" trf="1"/>
+</types>
+<vars>
+<var id="6" nam="distance" scp="2" src="1" tc="11"/>
+<var dv="1" id="7" nam="timedur" scp="8" src="1" tc="11"/>
+</vars>
+</mod>

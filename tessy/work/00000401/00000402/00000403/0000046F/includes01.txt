@@ -1,0 +1,5 @@
+-IC:/PROGRA~1/Razorcat/TESSY_4.2/sys/include
+-IC:/PROGRA~1/Razorcat/TESSY_4.2/sys/include/tessy
+-IC:/PROGRA~1/Razorcat/TESSY_4.2/sys/include/tessy/comm
+-IC:/PROGRA~1/Razorcat/TESSY_4.2/sys/include/tpt
+-IC:/Users/Sowjanya/Desktop

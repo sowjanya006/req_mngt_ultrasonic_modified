@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testobject name="vehdist" type="0" id="1135" foreign_id="0" testdata_id="6" state_mask="0x00000F0000003788" last_id="0" child_count="12" uuid="58626b56-236c-4789-892f-ff753387b0d5" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965628" last_synchronized="0">
+	<version value="4.2.8">
+	</version>
+	<properties>
+	</properties>
+	<testitems>
+		<testcase name="" type="1" id="1137" foreign_id="0" testdata_id="1073741823" state_mask="0x3700" testcase_number="1" child_count="1" description="" specification="" comment="" uuid="ecb7d54e-8483-47fa-8593-f71e67ccaf39" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965510" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="1" version="1" minor_version="0" short="The distance should be in the range of 2 to 80cm, else return inv_dist" text="" value="1"/>
+			</requirements>
+			<teststep name="" id="1138" foreign_id="0" testdata_id="1073741824" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="5693f04d-fd07-43c1-ae7d-5dea807febb3" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965509" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1139" foreign_id="0" testdata_id="1073741825" state_mask="0x3700" testcase_number="2" child_count="1" description="" specification="" comment="" uuid="c4574655-c3ce-4eb6-ac21-9c28e73aec13" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965539" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="1" version="1" minor_version="0" short="The distance should be in the range of 2 to 80cm, else return inv_dist" text="" value="1"/>
+			</requirements>
+			<teststep name="" id="1140" foreign_id="0" testdata_id="1073741826" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="23a12cb1-109e-47f5-9c96-abc4127a156c" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965539" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1141" foreign_id="0" testdata_id="1073741827" state_mask="0x3700" testcase_number="3" child_count="1" description="" specification="" comment="" uuid="af0af5f5-19a1-40fb-b172-49c72dd724f7" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965565" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="1" version="1" minor_version="0" short="The distance should be in the range of 2 to 80cm, else return inv_dist" text="" value="1"/>
+			</requirements>
+			<teststep name="" id="1142" foreign_id="0" testdata_id="1073741828" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="ef0c146a-fb46-4c51-8f4f-c78ea4f88e3e" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965565" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1143" foreign_id="0" testdata_id="1073741829" state_mask="0x3700" testcase_number="4" child_count="1" description="" specification="" comment="" uuid="6542fb92-d700-4b60-86cb-ab0dfddf3386" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965586" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="2" version="1" minor_version="0" short="The timedur should be always greater than 0, else return inv_time" text="" value="2"/>
+			</requirements>
+			<teststep name="" id="1144" foreign_id="0" testdata_id="1073741830" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="2f0ccaf3-6fc3-44bd-9344-eec99ebfedf0" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965586" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1145" foreign_id="0" testdata_id="1073741831" state_mask="0x3700" testcase_number="5" child_count="1" description="" specification="" comment="" uuid="19e818cd-5e3a-4ee2-844d-189d97d7b6fd" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965607" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="2" version="1" minor_version="0" short="The timedur should be always greater than 0, else return inv_time" text="" value="2"/>
+			</requirements>
+			<teststep name="" id="1146" foreign_id="0" testdata_id="1073741832" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="a16f79ee-cafa-49ab-86fa-09f38be114bb" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965607" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1147" foreign_id="0" testdata_id="1073741833" state_mask="0x3700" testcase_number="6" child_count="1" description="" specification="" comment="" uuid="9e03dbba-24ee-4f85-ad41-e3ebb9c6f9c1" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965617" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="2" version="1" minor_version="0" short="The timedur should be always greater than 0, else return inv_time" text="" value="2"/>
+			</requirements>
+			<teststep name="" id="1148" foreign_id="0" testdata_id="1073741834" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="034c8e3f-15e6-4853-9293-fe2f998c2eb6" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965617" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1149" foreign_id="0" testdata_id="1073741835" state_mask="0x3700" testcase_number="7" child_count="1" description="" specification="" comment="" uuid="c0eea2d5-074b-4437-af04-ccaea5375511" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965628" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="3" version="2" minor_version="0" short="The distance is greater than 40, obst_far is returned" text="" value="3"/>
+			</requirements>
+			<teststep name="" id="1150" foreign_id="0" testdata_id="1073741836" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="cf40a794-bdf3-4cfd-b9a6-460ff574f5ed" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965628" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1151" foreign_id="0" testdata_id="1073741837" state_mask="0x3700" testcase_number="8" child_count="1" description="" specification="" comment="" uuid="ff9b798d-743d-4cc5-bdcc-965a21672387" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965494" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="3" version="2" minor_version="0" short="The distance is greater than 40, obst_far is returned" text="" value="3"/>
+			</requirements>
+			<teststep name="" id="1152" foreign_id="0" testdata_id="1073741838" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="10d66880-e6a3-4281-8b28-b59c6b248c98" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965494" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1153" foreign_id="0" testdata_id="1073741839" state_mask="0x3700" testcase_number="9" child_count="1" description="" specification="" comment="" uuid="14602935-689b-445d-851c-2c54e7e54607" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965525" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="3" version="2" minor_version="0" short="The distance is greater than 40, obst_far is returned" text="" value="3"/>
+			</requirements>
+			<teststep name="" id="1154" foreign_id="0" testdata_id="1073741840" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="3d01f769-1462-48ff-a0f4-bb67637d2970" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965525" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1155" foreign_id="0" testdata_id="1073741841" state_mask="0x3700" testcase_number="10" child_count="1" description="" specification="" comment="" uuid="175e3bc6-1f1e-4b39-859b-d2a5bddd7344" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965552" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="4" version="1" minor_version="0" short="The distance is less than 30, obst_near is returned" text="" value="4"/>
+			</requirements>
+			<teststep name="" id="1156" foreign_id="0" testdata_id="1073741842" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="d611893e-b47b-4534-a888-ac542fdd061e" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965552" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1157" foreign_id="0" testdata_id="1073741843" state_mask="0x3700" testcase_number="11" child_count="1" description="" specification="" comment="" uuid="6aead056-86d4-4942-a8de-e0cd8eec64e3" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965575" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="4" version="1" minor_version="0" short="The distance is less than 30, obst_near is returned" text="" value="4"/>
+			</requirements>
+			<teststep name="" id="1158" foreign_id="0" testdata_id="1073741844" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="140ec76a-5584-43a0-a69f-88279d4e5463" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965575" last_synchronized="0">
+			</teststep>
+		</testcase>
+		<testcase name="" type="1" id="1159" foreign_id="0" testdata_id="1073741845" state_mask="0x3700" testcase_number="12" child_count="1" description="" specification="" comment="" uuid="07cfaace-5dfe-4972-85b6-717394b59d2f" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965596" last_synchronized="0">
+			<requirements>
+				<requirement doc_name="distance_calculator" doc_alias="ND" id="4" version="1" minor_version="0" short="The distance is less than 30, obst_near is returned" text="" value="4"/>
+			</requirements>
+			<teststep name="" id="1160" foreign_id="0" testdata_id="1073741846" type="1" state_mask="0x3700" repeat_count="1" description="" specification="" comment="" uuid="451cac82-9c6e-4a63-a532-7c429bf3ecbd" testitem_state_mask="0x80" usercode_state_mask="0x00" last_modified="1584084965596" last_synchronized="0">
+			</teststep>
+		</testcase>
+	</testitems>
+</testobject>
